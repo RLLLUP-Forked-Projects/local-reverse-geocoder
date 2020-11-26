@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "jshint --exclude ./node_modules,./docs/scripts .",
     "start": "node --max-old-space-size=4096 app.js",
-    "build": "jsdoc -d docs geocoder.js"
+    "build": "jsdoc -d docs geocoder.js",
+    "dev": "@powershell -Command $env:DEBUG='*';node --max-old-space-size=4096 app.js"
   },
   "keywords": [
     "geocoding",
@@ -23,7 +24,7 @@
     "express": "^4.17.1",
     "kdt": "^0.1.0",
     "request": "^2.88.0",
-    "node-unzip-2": "^0.2.8"
+    "unzipper": "^0.10.11"
   },
   "repository": {
     "type": "git",
